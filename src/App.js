@@ -1,10 +1,10 @@
-import CocktailSuggestions from './components/Cocktails';
-
+//import Cocktails from "./pages/Cocteles/Cocktails";
+import Home from "./pages/Home/Home";
+import './customTheme.css'
 function App() {
   return (
     <div>
-      <h1>Welcome to Elixir</h1>
-      <CocktailSuggestions />
+      <Home />
     </div>
   );
 }
