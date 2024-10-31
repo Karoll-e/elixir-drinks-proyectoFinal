@@ -10,8 +10,7 @@ function HeroSection() {
       <Container>
         <h1 className="">Elixir</h1>
         <p className="lead fs-4">
-          Explora el arte de la mixología con nuestros exclusivos cocteles
-          artesanales.
+          Donde cada trago cuenta una historia.
         </p>
         <Button className="btn" variant="secondary" size="lg">
           Explora nuestros cocteles exclusivos
