@@ -8,6 +8,10 @@ function Home() {
         <NavBar/>
         <HeroSection/>
     </div>
+    <div>
+        <NavBar/>
+        <HeroSection/>
+    </div>
   )
 }
 
