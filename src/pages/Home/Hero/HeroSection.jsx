@@ -13,8 +13,8 @@ function HeroSection() {
           Explora el arte de la mixología con nuestros exclusivos cocteles
           artesanales.
         </p>
-        <Button variant="secondary" size="ms">
-          Explorar nuestros cocteles
+        <Button className="btn" variant="secondary" size="lg">
+          Explora nuestros cocteles exclusivos
         </Button>
       </Container>
     </div>
