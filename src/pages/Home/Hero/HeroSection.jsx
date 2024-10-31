@@ -7,9 +7,7 @@ function HeroSection() {
     <div className="hero-section w-auto text-white d-flex flex-column justify-content-center align-items-center ">
       <Container>
         <h1 className="">Elixir</h1>
-        <p className="lead fs-4">
-          Donde cada trago cuenta una historia.
-        </p>
+        <p className="lead fs-4">Donde cada trago cuanta una historia.</p>
         <Button className="btn" variant="secondary" size="lg">
           Explora nuestros cocteles exclusivos
         </Button>
