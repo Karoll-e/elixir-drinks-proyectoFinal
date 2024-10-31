@@ -10,3 +10,17 @@
   .nav-bar .nav-link:hover {
     color: #ddd 
   }
+
+  .nav-bar {
+    /* Your existing styles */
+  }
+  
+  /* Style for active links */
+  .nav-link.active {
+    color: #ffae42 !important; 
+  }
+  
+  /* Hover effect for links */
+  .nav-link:hover {
+    color: your-hover-color !important; /* Replace with your desired hover color */
+  }
