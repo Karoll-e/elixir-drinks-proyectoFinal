@@ -6,11 +6,11 @@ import { FaInstagramSquare } from "react-icons/fa";
 function Contact() {
   return (
     <div className="contact-page">
-      <h1>¿Necesitas ayuda o tienes alguna pregunta?</h1>
+      <h1>¿Necesitas ayuda o <br />tienes alguna pregunta?</h1>
       <p>
-        Nos encantaría ayudarte a disfrutar de una experiencia única con nuestros cócteles.
-        Queremos escuchar tus ideas, resolver tus dudas y mejorar junto a ti, porque tu opinión
-        es fundamental para que sigamos creando momentos inolvidables.
+        Nos encantaría ayudarte a disfrutar de una experiencia única con <br /> nuestros cócteles
+        Queremos escuchar tus ideas, resolver tus dudas y <br /> mejorar junto a ti, porque tu opinión
+        es fundamental para que sigamos <br /> creando momentos inolvidables.
       </p>
       
       <div className="contact-content">

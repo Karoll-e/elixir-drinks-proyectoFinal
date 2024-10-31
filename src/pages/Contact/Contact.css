@@ -7,7 +7,8 @@
   }
   
   .contact-page h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: #BF9D5F;
     margin-bottom: 1rem;
   }
   
@@ -21,13 +22,15 @@
     display: flex;
     gap: 2rem;
     justify-content: center;
+    flex-wrap: wrap;
   }
   
   .contact-form, .contact-info {
     background-color: #2a2a2a;
     padding: 1.5rem;
     border-radius: 8px;
-    width: 400px;
+    max-width: 100%; /* Allows containers to adapt */
+    width: 400px; /* Optional: can be removed */
   }
   
   .contact-form h2, .contact-info h2 {
