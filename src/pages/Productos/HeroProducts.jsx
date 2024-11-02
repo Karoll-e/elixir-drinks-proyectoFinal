@@ -1,6 +1,6 @@
 import React from "react";
 import './HeroProducts.css'
-import Image1 from './imagen.jpeg'
+//import Image1 from './imagen.jpeg'
 
 function HeroProducts() {
     return (
