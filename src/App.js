@@ -4,6 +4,7 @@ import './customTheme.css'
 import Contact from "./pages/Contact/Contact";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./pages/Home/Navbar/NavBar";
+import Products from "./pages/Productos/Productos"
 
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/sobre-nosotros" element={""} />
-            <Route path="/productos" element={""} />
+            <Route path="/productos" element={<Products/>}/>
             <Route path="/contacto" element={<Contact />} />
             <Route path="/cart" element={""} />
             <Route path="/account" element={""} />
