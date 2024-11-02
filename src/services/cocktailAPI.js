@@ -1,38 +1,17 @@
-import axios from 'axios';
+const BASE_URL = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
 
-const API_BASE_URL = 'https://www.thecocktaildb.com/api/json/v1/1';
-
-const apiClient = axios.create({
-  baseURL: API_BASE_URL,
-  timeout: 5000, 
-});
-
-export const getCocktailsByName = async (name) => {
+export const fetchCocktails = async (cocktailNames) => {
   try {
-    const response = await apiClient.get(`/search.php?s=${name}`);
-    return response.data.drinks;
+    const results = await Promise.all(
+      cocktailNames.map((name) =>
+        fetch(`${BASE_URL}${name}`)
+          .then((response) => response.json())
+          .then((data) => data.drinks || [])
+      )
+    );
+    return results.flat();
   } catch (error) {
-    console.error("Error fetching cocktails by name:", error);
-    throw error;
-  }
-};
-
-export const getCocktailsByIngredient = async (ingredient) => {
-  try {
-    const response = await apiClient.get(`/filter.php?i=${ingredient}`);
-    return response.data.drinks;
-  } catch (error) {
-    console.error("Error fetching cocktails by ingredient:", error);
-    throw error;
-  }
-};
-
-export const getRandomCocktail = async () => {
-  try {
-    const response = await apiClient.get('/random.php');
-    return response.data.drinks[0];
-  } catch (error) {
-    console.error("Error fetching random cocktail:", error);
-    throw error;
+    console.error("Error fetching cocktails:", error);
+    throw error; 
   }
 };
