@@ -1,0 +1,16 @@
+.card {
+    background-color: rgba(0, 0, 0, 0.26);
+    width: 400px;
+    height: 80px;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+    color:#D7C2B8;
+    font-family: var(--cursive-font);
+    border-radius: 30px;
+
+    h2{
+        font-size: 3rem;
+    }
+}
