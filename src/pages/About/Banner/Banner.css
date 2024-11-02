@@ -1,0 +1,32 @@
+.Banner-section {
+  background: #1e1e1e;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+
+  h1 {
+    font-family: var(--primary-font);
+    font-size: 6rem;
+    color: #bf9d5f;
+  }
+}
+
+@media (max-width: 1024px) {
+  .Banner-section h1 {
+    font-size: 5rem;
+  }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .Banner-section h1 {
+    font-size: 4rem;
+  }
+}
+
+/* Ajustes para pantallas muy pequeñas (teléfonos) */
+@media (max-width: 480px) {
+  .Banner-section h1 {
+    font-size: 2.5rem;
+  }
+}

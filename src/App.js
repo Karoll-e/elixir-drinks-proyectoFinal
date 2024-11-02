@@ -1,6 +1,7 @@
 //import Cocktails from "./pages/Cocteles/Cocktails";
 import Home from "./pages/Home/Home";
 import './customTheme.css'
+import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./pages/Home/Navbar/NavBar";
@@ -14,7 +15,7 @@ function App() {
         <div className="content">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/sobre-nosotros" element={""} />
+            <Route path="/sobre-nosotros" element={<About/>} /> {/* Ruta para About */}
             <Route path="/productos" element={""} />
             <Route path="/contacto" element={<Contact />} />
             <Route path="/cart" element={""} />
