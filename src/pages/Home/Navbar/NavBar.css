@@ -11,10 +11,6 @@
     color: #ddd 
   }
 
-  .nav-bar {
-    /* Your existing styles */
-  }
-  
   /* Style for active links */
   .nav-link.active {
     color: #ffae42 !important; 
