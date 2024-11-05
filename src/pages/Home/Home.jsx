@@ -1,5 +1,4 @@
 import React from 'react'
-import NavBar from './Navbar/NavBar'
 import Main from './Main/Main'
 import HeroSection from './Hero/HeroSection'
 import UltimaSection from './Ultimo/UltimaSection'
@@ -9,7 +8,6 @@ import FooterSection from './Footer/FooterSection'
 function Home() {
   return (
     <div>
-        <NavBar/>
         <HeroSection/>
         <IconsSection/>
         <Main/>
