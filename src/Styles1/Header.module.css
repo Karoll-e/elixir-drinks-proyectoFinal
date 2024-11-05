@@ -1,0 +1,69 @@
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Distribuir logo y enlaces */
+  align-items: center;
+  background: linear-gradient(to right, #FFD700, #BF9D5F);
+  padding: 10px 20px;
+  height: 50px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  height: 50px;
+  width: auto;
+}
+
+.menuIcon {
+  display: none; /* Oculta el menú hamburguesa por defecto */
+  cursor: pointer;
+  color: white;
+  font-size: 24px; /* Ajusta el tamaño del ícono */
+}
+
+.navLinks {
+  list-style: none;
+  display: flex; /* Menú horizontal en pantallas grandes */
+  gap: 50px; /* Espacio entre los enlaces */
+  margin: 0;
+  padding: 0;
+}
+
+.navLinks li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.navLinks li a:hover {
+  color: #BF9D5F; /* Cambia a dorado en hover */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menuIcon {
+    display: block; /* Muestra el ícono de hamburguesa en pantallas pequeñas */
+  }
+
+  .navLinks {
+    display: none; /* Oculta los enlaces por defecto */
+    flex-direction: column; /* Coloca los enlaces en columna */
+    gap: 10px; /* Espacio reducido entre enlaces */
+    width: 100%; /* Ancho completo */
+    text-align: center; /* Centra enlaces */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semitransparente para el menú desplegable */
+    position: absolute; /* Para que se superponga a otros elementos */
+    top: 60px; /* Ajusta según la altura de la barra de navegación */
+    left: 0;
+    z-index: 1000; /* Asegúrate de que esté sobre otros elementos */
+  }
+
+  .navLinks.active {
+    display: flex; /* Muestra los enlaces cuando el menú está activo */
+  }
+}
