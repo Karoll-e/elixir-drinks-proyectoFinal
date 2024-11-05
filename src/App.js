@@ -6,7 +6,8 @@ import Contact from "./pages/Contact/Contact";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./pages/Home/Navbar/NavBar";
 import Products from "./pages/Productos/Productos"
-
+import Login from "./pages/Auth/Login"
+import Register from "./pages/Auth/Register"
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
             <Route path="/productos" element={<Products/>}/>
             <Route path="/contacto" element={<Contact />} />
             <Route path="/cart" element={""} />
-            <Route path="/account" element={""} />
+            <Route path="/account" element={<Login />} />
+            <Route path="/register" element={<Register />} />
             {/* Add a catch-all route for 404 pages */}
             <Route path="*" element={
               <div className="d-flex justify-content-center align-items-center" style={{ minHeight: "80vh" }}>
