@@ -1,14 +1,14 @@
-import React from "react";
-import HeroSection from "./Hero/HeroSection";
-import UltimaSection from "./Ultimo/UltimaSection";
-// import CoctelesDetalles from "../CoctelesDetalles/CoctelesDetalles";
+import React from 'react'
+import Main from './Main/Main'
+import HeroSection from './Hero/HeroSection'
+import UltimaSection from './Ultimo/UltimaSection'
 
 function Home() {
   return (
     <div>
-      <HeroSection />
-      <UltimaSection />
-      {/* <CoctelesDetalles /> */}
+        <HeroSection/>
+        <Main/>
+        <UltimaSection/>
     </div>
   );
 }

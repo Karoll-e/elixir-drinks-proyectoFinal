@@ -1,4 +1,3 @@
-//import Cocktails from "./pages/Cocteles/Cocktails";
 import Home from "./pages/Home/Home";
 import './customTheme.css'
 import About from "./pages/About/About";
@@ -7,7 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./pages/Home/Navbar/NavBar";
 import Products from "./pages/Productos/Productos"
 import CoctelesDetalles from "./pages/CoctelesDetalles/CoctelesDetalles";
-
+import Login from "./pages/Auth/Login";
+import Register from "./pages/Auth/Register"
 
 function App() {
   return (
@@ -22,8 +22,9 @@ function App() {
             <Route path="/cocktail/:idDrink" element={<CoctelesDetalles />} />
             <Route path="/contacto" element={<Contact />} />
             <Route path="/cart" element={""} />
-            <Route path="/account" element={""} />
-            {/* ruta pagina 404 error */}
+            <Route path="/account" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            {/* Add a catch-all route for 404 pages */}
             <Route path="*" element={
               <div className="d-flex justify-content-center align-items-center" style={{ minHeight: "80vh" }}>
                 <h2>404 - Página no encontrada</h2>
