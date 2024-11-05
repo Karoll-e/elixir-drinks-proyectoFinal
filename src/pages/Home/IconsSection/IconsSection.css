@@ -1,0 +1,25 @@
+.icons-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1E1E1E;
+    padding: 20px;
+  }
+  
+  .icon-item {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    gap: 15px; 
+  }
+  
+  .icon-image {
+    width: 80px; 
+    height: 80px;
+  }
+  
+  .icon-item p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
