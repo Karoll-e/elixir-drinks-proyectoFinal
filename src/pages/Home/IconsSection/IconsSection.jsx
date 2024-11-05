@@ -13,15 +13,15 @@ function IconsSection() {
           alt="Cócteles personalizados"
           className="icon-image"
         />
-        <p>Cócteles personalizados</p>
+        <p>Cócteles <br />personalizados</p>
       </div>
-      <div className="icon-item">
+      <div className="icon-item ">
         <img
           src={ingredientesIcon}
           alt="Ingredientes selectos"
           className="icon-image"
         />
-        <p>Ingredientes selectos</p>
+        <p >Ingredientes <br /> selectos</p>
       </div>
       <div className="icon-item">
         <img
@@ -29,7 +29,7 @@ function IconsSection() {
           alt="Servicio de entrega premium"
           className="icon-image"
         />
-        <p>Servicio de entrega premium</p>
+        <p>Servicio de <br />entrega premium</p>
       </div>
     </div>
   );
