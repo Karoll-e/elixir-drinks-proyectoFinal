@@ -10,6 +10,7 @@ function Home() {
         <Main/>
         <UltimaSection/>
     </div>
-  )
+  );
 }
-export default Home
+
+export default Home;
