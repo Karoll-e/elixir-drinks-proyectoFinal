@@ -8,7 +8,7 @@ function CoctelSpinner() {
         <span className="cocktail-emoji" aria-hidden="true">
           🍸
         </span>
-        <span className="visually-hidden">Loading...</span>
+        <span className="visually-hidden">Cargando...</span>
       </div>
     </div>
   );

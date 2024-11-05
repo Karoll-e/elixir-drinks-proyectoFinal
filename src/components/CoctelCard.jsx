@@ -1,26 +1,17 @@
 import React from 'react'
 import './CoctelCard.css'
-
-// function CoctelCard({cocktail}) {
-//   return (
-//     <div className="card" style={{ width: "18rem" }}>
-//       <img src={cocktail.strDrinkThumb} className="card-img-top" alt={cocktail.strDrink} />
-//       <div className="card-body">
-//         <h5 className="card-title">{cocktail.strDrink}</h5>
-//         <p className="card-text">Price: {cocktail.price ? cocktail.price : "N/A"}</p>
-//         <a href="#" className="btn btn-primary">View Details</a>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default CoctelCard
-
-
+import { useNavigate } from 'react-router-dom';
 
 const CoctelCard = ({cocktail}) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/cocktail/${cocktail.idDrink}`)
+    ;
+  };
+
   return (
-    <div className="cont">
+    <div className="cont" onClick={handleClick}>
       <div className="product-card">
         <div className="product-card__image">
           <img

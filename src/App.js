@@ -6,6 +6,7 @@ import Contact from "./pages/Contact/Contact";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./pages/Home/Navbar/NavBar";
 import Products from "./pages/Productos/Productos"
+import CoctelesDetalles from "./pages/CoctelesDetalles/CoctelesDetalles";
 
 
 function App() {
@@ -18,10 +19,11 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/sobre-nosotros" element={<About/>} /> {/* Ruta para About */}
             <Route path="/productos" element={<Products/>}/>
+            <Route path="/cocktail/:idDrink" element={<CoctelesDetalles />} />
             <Route path="/contacto" element={<Contact />} />
             <Route path="/cart" element={""} />
             <Route path="/account" element={""} />
-            {/* Add a catch-all route for 404 pages */}
+            {/* ruta pagina 404 error */}
             <Route path="*" element={
               <div className="d-flex justify-content-center align-items-center" style={{ minHeight: "80vh" }}>
                 <h2>404 - Página no encontrada</h2>
