@@ -1,6 +1,8 @@
 import React from "react";
 import "./Login.css";
 import imgLogo from "../../assets/logo-elixir.png";
+import { Link } from "react-router-dom";
+
 function Login({ onToggle }) {
   return (
     <div className="login-container">
@@ -19,9 +21,9 @@ function Login({ onToggle }) {
               Ingresar
             </button>
           </form>
-          <p onClick={onToggle} className="toggle-link">
+          <Link to="/register" className="toggle-link">
             Nuevo Usuario
-          </p>
+          </Link>
         </div>
       </div>
     </div>
