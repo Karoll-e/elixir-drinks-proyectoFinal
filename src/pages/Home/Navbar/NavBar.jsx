@@ -16,7 +16,7 @@ const NavBar = () => {
       <Container>
         {/* Logo a la izquierda */}
         <Navbar.Brand as={Link} to="/">
-          <img src={logoElixir} alt="" style={{ height: "40px" }} />
+          <img src={logoElixir} alt="" style={{ height: "80px" }} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse
@@ -49,12 +49,12 @@ const NavBar = () => {
           <Nav className="ms-auto">
             <NavItem>
               <Nav.Link as={Link} to="/cart">
-                <ShoppingCart color="white" size={20} />
+                <ShoppingCart color="white" size={25} />
               </Nav.Link>
             </NavItem>
             <NavItem>
               <Nav.Link as={Link} to="/account">
-                <User color="white" size={20} />
+                <User color="white" size={25} />
               </Nav.Link>
             </NavItem>
           </Nav>
