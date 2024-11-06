@@ -1,9 +1,24 @@
-import React from 'react'
+import React from 'react';
+import './Footer.css';
+import facebookIcon from '../../../assets/Facebook.png';
+import instagramIcon from '../../../assets/Instagram.png';
 
 function FooterSection() {
   return (
-    <div>FooterSection</div>
-  )
+    <footer className="footer-section">
+      <div className="footer-content">
+        <h2 className="footer-title">Elixir</h2>
+        <div className="footer-contact">
+          <p>Teléfono: 300-2588741</p>
+          <p>Correo Electrónico: elixir@cocteles.com</p>
+        </div>
+        <div className="footer-icons">
+          <img src={facebookIcon} alt="Facebook" className="social-icon" />
+          <img src={instagramIcon} alt="Instagram" className="social-icon" />
+        </div>
+      </div>
+    </footer>
+  );
 }
 
-export default FooterSection
+export default FooterSection;

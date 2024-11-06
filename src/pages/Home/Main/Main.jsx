@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Main.css";
 import imgAmarillo from "../../../assets/CoctelAmarillo.jpg";
 import imgCafe from "../../../assets/coctelCafé.jpg";
+import { Link } from "react-router-dom";
 
 function Main() {
   return (
@@ -17,9 +18,11 @@ function Main() {
             Inspirados en la tradición, creamos cócteles que elevan cada
             momento. Innovación y pasión en cada copa.
           </p>
-          <button className="btn btn-custom">
-            Encuentra el perfecto para ti
-          </button>
+          <Link to="/quiz">
+            <button className="btn btn-custom">
+              Encuentra el perfecto para ti
+            </button>
+          </Link>
         </div>
         <div className="col-md-4 d-flex justify-content-center align-items-center image-placeholder">
           <img src={imgCafe} alt="Coctel Café" className="image" />
