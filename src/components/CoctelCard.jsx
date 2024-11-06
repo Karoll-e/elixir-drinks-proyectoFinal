@@ -6,9 +6,8 @@ import { Link } from "react-router-dom";
 
 
 const CoctelCard = ({ cocktail }) => {
-  
   const navigate = useNavigate();
-  const { addToCart } = useCart();
+  const {addToCart} = useCart()
 
   const handleClick = () => {
     navigate(`/cocktail/${cocktail.idDrink}`, {
