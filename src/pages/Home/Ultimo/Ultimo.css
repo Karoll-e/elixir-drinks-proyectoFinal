@@ -1,51 +1,92 @@
-
 .ultima-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #1e1e1e;
-    padding: 4rem;
-    color: #f2f2f2;
-  }
-  
-  .images-container {
-    display: flex;
-    gap: 3rem;
-    margin-right: 4rem;
-  }
-  
-  .image1-placeholder {
-    width: 300px;
-    height: 500px;
-    background-image: url('/src/assets/Cocteles/crema-wisky-chocolate.jpeg'); 
-    background-size: cover;
-    background-position: center;
-    border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e1e1e;
+  padding: 4rem;
+  color: #f2f2f2;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  gap: 2rem; /* Adds space between items when wrapped */
+}
+
+.images-container {
+  display: flex;
+  gap: 3rem;
+  margin-right: 4rem;
+}
+
+.image1-placeholder,
+.image2-placeholder {
+  width: 300px;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}
+
+.image1-placeholder {
+  background-image: url('/src/assets/Cocteles/crema-wisky-chocolate.jpeg');
+}
+
+.image2-placeholder {
+  background-image: url('/src/assets/Cocteles/fusion-cereza-naranja.jpeg');
+}
+
+.text-container {
+  max-width: 400px;
+  text-align: center;
+}
+
+.text-container h2 {
+  font-size: 2.5rem;
+  font-family: var(--secondary-font);
+  color: #ffae42;
+  margin-bottom: 1rem;
+}
+
+.text-container p {
+  font-size: 1.1rem;
+  font-family: var(--secondary-font);
+  line-height: 2rem;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .ultima-section {
+      flex-direction: column; /* Stack items vertically */
+      text-align: center; /* Center-align text for readability */
+      padding: 2rem; /* Reduce padding on smaller screens */
   }
 
+  .images-container {
+      flex-direction: column; /* Stack images vertically */
+      margin-right: 0; /* Remove right margin */
+      gap: 2rem;
+  }
+
+  .image1-placeholder,
   .image2-placeholder {
-    width: 300px;
-    height: 500px;
-    background-image: url('/src/assets/Cocteles/fusion-cereza-naranja.jpeg'); 
-    background-size: cover;
-    background-position: center;
-    border-radius: 8px;
+      width: 100%; /* Make images full width on smaller screens */
+      max-width: 300px; /* Set a maximum width */
+      height: auto; /* Maintain aspect ratio */
   }
-  
-  .text-container {
-    max-width: 400px;
-    h2 {font-size: 2.5rem;}
-    p {font-size: 1.1rem;}
-  }
-  
+
   .text-container h2 {
-    font-family: var(--secondary-font);
-    color: #ffae42;
-    margin-bottom: 1rem;
+      font-size: 2rem; /* Adjust title size */
   }
-  
+
   .text-container p {
-    font-family: var(--secondary-font);
-    line-height: 2rem;
+      font-size: 1rem;
+      line-height: 1.6rem;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .text-container h2 {
+      font-size: 1.8rem; /* Further adjust title size */
+  }
+
+  .text-container p {
+      font-size: 0.9rem; /* Smaller font for paragraph */
+  }
+}
