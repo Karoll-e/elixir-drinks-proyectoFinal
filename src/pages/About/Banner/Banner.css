@@ -1,0 +1,32 @@
+.Banner-section {
+  background: linear-gradient(45deg, rgb(255, 64, 5), rgb(41, 34, 11), rgb(0, 0, 0), rgb(0, 0, 0));
+  height: 20vh;
+  width: 20vw;
+  overflow: hidden;
+
+  h1 {
+    font-family: var(--primary-font);
+    font-size: 5rem;
+    color: #bf9d5f;
+  }
+}
+
+@media (max-width: 1024px) {
+  .Banner-section h1 {
+    font-size: 5rem;
+  }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .Banner-section h1 {
+    font-size: 4rem;
+  }
+}
+
+/* Ajustes para pantallas muy pequeñas (teléfonos) */
+@media (max-width: 480px) {
+  .Banner-section h1 {
+    font-size: 2.5rem;
+  }
+}
