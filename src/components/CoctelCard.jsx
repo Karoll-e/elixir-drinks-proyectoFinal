@@ -26,7 +26,7 @@ const CoctelCard = ({cocktail}) => {
           <h2 className="product-card__title text-truncate mb-3">{cocktail.strDrink}</h2>
           <div className="product-card__price-row">
           <span className="product-card__price">{cocktail.price ? cocktail.price : "N/A"}</span>
-          <button className="product-card__btn" onClick={(e) => { e.stopPropagation() addToCart(cocktail)}}>Add to Cart</button>
+          <button className="product-card__btn" onClick={() => {addToCart(cocktail)}}>Add to Cart</button>
           </div>
         </div>
       </div>
