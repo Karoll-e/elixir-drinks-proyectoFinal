@@ -64,6 +64,7 @@ function CoctelesDetalles() {
                 <div className="fs-5 mb-5">
                   <span className="ms-2">$40.00</span>
                 </div>
+                <h6 className="fw-bolder">Instrucciones</h6>
                 <p className="lead">{cocktail.strInstructions}</p>
                 <div className="d-flex">
                   <input
