@@ -1,5 +1,6 @@
 import React from 'react'
 import './CoctelCard.css'
+import { useCart } from '../pages/Shopping-cart/Hooks/useCart';
 
 // function CoctelCard({cocktail}) {
 //   return (
@@ -19,6 +20,8 @@ import './CoctelCard.css'
 
 
 const CoctelCard = ({cocktail}) => {
+
+  const {addToCart} = useCart()
   return (
     <div className="cont">
       <div className="product-card">
@@ -32,7 +35,7 @@ const CoctelCard = ({cocktail}) => {
           <h2 className="product-card__title text-truncate mb-3">{cocktail.strDrink}</h2>
           <div className="product-card__price-row">
             <span className="product-card__price">{cocktail.price ? cocktail.price : "N/A"}</span>
-            <button className="product-card__btn">Add to Cart</button>
+            <button className="product-card__btn" onClick={() => addToCart(cocktail)}>Add to Cart</button>
           </div>
         </div>
       </div>
