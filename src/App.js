@@ -8,6 +8,8 @@ import Products from "./pages/Productos/Productos"
 import CoctelesDetalles from "./pages/CoctelesDetalles/CoctelesDetalles";
 import Login from "./pages/Auth/Login";
 import Register from "./pages/Auth/Register"
+import FooterSection from './pages/Home/Footer/FooterSection'
+import CocktailQuestionnaire from "./pages/Home/QuizRecomendacion/CocktailRecommender";
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
             <Route path="/cart" element={""} />
             <Route path="/account" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/quiz" element={<CocktailQuestionnaire />} />
             {/* Add a catch-all route for 404 pages */}
             <Route path="*" element={
               <div className="d-flex justify-content-center align-items-center" style={{ minHeight: "80vh" }}>
@@ -33,6 +36,7 @@ function App() {
           </Routes>
         </div>
       </div>
+      <FooterSection />
     </BrowserRouter>
   );
 }
