@@ -1,14 +1,18 @@
-//import Cocktails from "./pages/Cocteles/Cocktails";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import "./customTheme.css";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import NavBar from "./pages/Home/Navbar/NavBar";
 import Products from "./pages/Productos/Productos";
 import SectionShop from "./pages/Shopping-cart/Section-Shop";
 import { CartProvider } from "./pages/Shopping-cart/Context/cardContext";
-import { Fotter } from "./pages/Productos/Fotter";
+import CoctelesDetalles from "./pages/CoctelesDetalles/CoctelesDetalles";
+import Login from "./pages/Auth/Login";
+import Register from "./pages/Auth/Register";
+import NavBar from "./pages/Home/Navbar/NavBar";
+import FooterSection from "./pages/Home/Footer/FooterSection";
+import CocktailQuestionnaire from "./pages/Home/QuizRecomendacion/CocktailRecommender";
+import "./customTheme.css";
 
 function App() {
   return (
@@ -19,13 +23,15 @@ function App() {
           <div className="content">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/sobre-nosotros" element={<About />} />{" "}
-              {/* Ruta para About */}
+              <Route path="/sobre-nosotros" element={<About />} />
               <Route path="/productos" element={<Products />} />
               <Route path="/contacto" element={<Contact />} />
               <Route path="/cart" element={<SectionShop />} />
-              <Route path="/account" element={""} />
-              {/* Add a catch-all route for 404 pages */}
+              <Route path="/account" element={<Login />} />
+              <Route path="/register" element={<Register />} />
+              <Route path="/quiz" element={<CocktailQuestionnaire />} />
+              <Route path="/cocktail/:idDrink" element={<CoctelesDetalles />} />
+              {/* Ruta de 404 para páginas no encontradas */}
               <Route
                 path="*"
                 element={
@@ -40,6 +46,7 @@ function App() {
             </Routes>
           </div>
         </div>
+        <FooterSection />
       </BrowserRouter>
     </CartProvider>
   );

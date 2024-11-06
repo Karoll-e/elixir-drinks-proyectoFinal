@@ -8,7 +8,7 @@
 }
 
 .search-header {
-  background-color: #1e1e1e;
+  background-color: var(--primary-color);
   padding: 3rem 1rem;
 }
 

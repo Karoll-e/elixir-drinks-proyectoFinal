@@ -1,6 +1,7 @@
 .cont {
     max-width: 250px;
     margin: 1rem auto;
+    cursor: pointer;
 }
 
 .product-card {
