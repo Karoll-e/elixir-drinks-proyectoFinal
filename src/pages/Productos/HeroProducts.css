@@ -1,13 +1,13 @@
 .hero-product {
-  height: 400px;
+  height: 150px;
   color: white;
   text-align: center;
   align-content: center;
-  background: #1e1e1e;
+  background: linear-gradient(45deg, rgb(255, 64, 5), rgb(41, 34, 11), rgb(0, 0, 0), rgb(0, 0, 0));
   font-family: var(--primary-font);
 
   h1 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 
