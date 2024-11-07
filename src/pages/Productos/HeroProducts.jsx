@@ -5,7 +5,7 @@ import './HeroProducts.css'
 function HeroProducts() {
     return (
         <div className="hero-product slide" >
-          <h1 className="">COCTELES</h1>
+          <h1 className="">Cócteles</h1>
         </div>
       );
 }
