@@ -25,21 +25,21 @@
 }
 
 .image1-placeholder {
-  background-image: url('/src/assets/Cocteles/crema-wisky-chocolate.jpeg');
+  background-image: url('/src/assets/coctel_cafe.jpeg');
 }
 
 .image2-placeholder {
-  background-image: url('/src/assets/Cocteles/fusion-cereza-naranja.jpeg');
+  background-image: url('/src/assets/coctel_cereza.jpeg');
 }
 
 .text-container {
-  max-width: 400px;
-  text-align: center;
+  max-width: 700px;
+  text-align: left;
 }
 
 .text-container h2 {
   font-size: 2.5rem;
-  font-family: var(--secondary-font);
+  font-family: var(--primary-font);
   color: #ffae42;
   margin-bottom: 1rem;
 }
