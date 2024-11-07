@@ -10,7 +10,7 @@ function UltimaSection() {
       </div>
       
       <div className="text-container">
-        <h2>"DOS COCTELES ICONICOS, DOS HISTORIAS PARA DESCUBRIR"🍸🍹</h2>
+        <h2>"DOS COCTELES ICONICOS, DOS HISTORIAS PARA DESCUBRIR"</h2>
         <br></br>
         <p>
           Cada cóctel en nuestra colección representa una travesía única.
