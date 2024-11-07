@@ -43,7 +43,8 @@
       font-size: 2rem;
     }
     .section-team p {
-      font-size: 1.2rem;
+      margin: 0 2px;
+      font-size: 1.1rem;
     }
     .section-cards {
       flex-direction: column; /* Pone las tarjetas en una columna */
