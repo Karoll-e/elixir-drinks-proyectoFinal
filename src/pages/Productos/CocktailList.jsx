@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react"; 
 import { fetchCocktails } from "../../services/cocktailAPI";
+import { fetchLimitedCocktails } from "../../services/cocktailAPI";
 import CoctelCard from "../../components/CoctelCard";
 import "./CocktailList.css";
 import CoctelSpinner from "../../components/CoctelSpinner";
 import { Search } from "lucide-react";
 import Dropdown from "../../components/Dropdown";
 
-const COCKTAIL_NAMES = ["margarita", "daiquiri", "gin tonic", "mojito", "bloody mary"];
+
+const COCKTAIL_NAMES = ["margarita", "daiquiri", "gin tonic", "mojito", "bloody mary", "americano", "Mimosa", "Pina Colada"];
 
 function CocktailList() {
   const [cocktails, setCocktails] = useState([]);
@@ -20,7 +22,7 @@ function CocktailList() {
     const getCocktails = async () => {
       try {
         setError(null);
-        const cocktailsData = await fetchCocktails(COCKTAIL_NAMES);
+        const cocktailsData = await fetchLimitedCocktails(50);
         validateCocktails(cocktailsData);
       } catch (error) {
         handleError(error);

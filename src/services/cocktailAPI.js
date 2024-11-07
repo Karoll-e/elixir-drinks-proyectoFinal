@@ -27,3 +27,26 @@ export const fetchCocktailById = async (idDrink) => {
     throw error;
   }
 };
+
+
+export const fetchLimitedCocktails = async (limit = 52) => {
+  try {
+    // Fetch cocktails for each letter in the alphabet
+    const cocktails = await Promise.all(
+      'abcdefghijklmnopqrstuvwxyz'.split('').map(async (letter) => {
+        const response = await fetch(`${BASE_URL}/search.php?f=${letter}`);
+        const { drinks } = await response.json();
+        return drinks || [];
+      })
+    );
+
+    // Flatten the array and shuffle the cocktails
+    const flattenedCocktails = cocktails.flat().sort(() => 0.5 - Math.random());
+
+    // Return the first `limit` cocktails
+    return flattenedCocktails.slice(0, limit);
+  } catch (error) {
+    console.error('Error fetching limited cocktails:', error);
+    throw error;
+  }
+};
