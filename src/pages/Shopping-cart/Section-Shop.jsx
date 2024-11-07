@@ -27,7 +27,6 @@ function SectionShop() {
           </div>
         </div>
       </Container>
-      //holaa
     </div>
   );
 }
